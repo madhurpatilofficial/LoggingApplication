@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<configuration>
+  <appender name="Console" class="ch.qos.logback.core.ConsoleAppender">
+    <layout class="ch.qos.logback.classic.PatternLayout">
+      <Pattern>
+        [%thread] %-5level %logger{36} - %msg%n %d{yyyy-MM-dd HH:mm:ss} 
+      </Pattern>
+    </layout>
+  </appender>
+
+  <root level="info">
+    <appender-ref ref="Console" />
+  </root>
+
+  <!-- Log everything at the TRACE level -->
+  <logger name="com.training.com" level="trace" additivity="false">
+    <appender-ref ref="Console" />
+  </logger>
+</configuration>

@@ -1,0 +1,14 @@
+spring:
+  application:
+    name: MyYmlName
+    
+    
+logging:
+  file:
+    name: logs/newfile.log
+  level:
+    root: ERROR
+    
+    
+server:
+  port: 9090
